@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		CE778C942712D412002023BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE778C922712D412002023BC /* Main.storyboard */; };
 		CE778C962712D414002023BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE778C952712D414002023BC /* Assets.xcassets */; };
 		CE778C992712D414002023BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE778C972712D414002023BC /* LaunchScreen.storyboard */; };
+		CE778CA12712D63A002023BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE778CA02712D63A002023BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CE778C952712D414002023BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE778C982712D414002023BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE778C9A2712D414002023BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE778CA02712D63A002023BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderMusicListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +58,6 @@
 				0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */,
 				2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				CE778C952712D414002023BC /* Assets.xcassets */,
 				CE778C972712D414002023BC /* LaunchScreen.storyboard */,
 				CE778C9A2712D414002023BC /* Info.plist */,
+				CE778CA02712D63A002023BC /* GoogleService-Info.plist */,
 			);
 			path = TinderMusicListApp;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE778CA12712D63A002023BC /* GoogleService-Info.plist in Resources */,
 				CE778C992712D414002023BC /* LaunchScreen.storyboard in Resources */,
 				CE778C962712D414002023BC /* Assets.xcassets in Resources */,
 				CE778C942712D412002023BC /* Main.storyboard in Resources */,

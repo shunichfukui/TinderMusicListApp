@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>259729848236-9oalntssd62riu4hblbvpt6co6c74bel.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.259729848236-9oalntssd62riu4hblbvpt6co6c74bel</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrWgDmbXDwe2Nc4oF6JwPPhe7gipdCmtw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>259729848236</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shunich.TinderMusicListApp</string>
+	<key>PROJECT_ID</key>
+	<string>tindermusicapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tindermusicapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:259729848236:ios:5c8b07dc04710146dcac09</string>
+</dict>
+</plist>
