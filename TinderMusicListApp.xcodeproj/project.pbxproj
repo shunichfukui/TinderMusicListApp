@@ -18,6 +18,7 @@
 		CE778CA92712DD4A002023BC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CA82712DD49002023BC /* UIColorExtension.swift */; };
 		CE778CAB2712DE24002023BC /* SaveProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAA2712DE24002023BC /* SaveProfile.swift */; };
 		CE778CAD2712F737002023BC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAC2712F737002023BC /* SearchViewController.swift */; };
+		CE778CAF27130D1D002023BC /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAE27130D1D002023BC /* SelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CE778CA82712DD49002023BC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CE778CAA2712DE24002023BC /* SaveProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfile.swift; sourceTree = "<group>"; };
 		CE778CAC2712F737002023BC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE778CAE27130D1D002023BC /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderMusicListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			children = (
 				CE778CA62712DAEA002023BC /* LoginViewController.swift */,
 				CE778CAC2712F737002023BC /* SearchViewController.swift */,
+				CE778CAE27130D1D002023BC /* SelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				CE778CAD2712F737002023BC /* SearchViewController.swift in Sources */,
 				CE778CA72712DAEA002023BC /* LoginViewController.swift in Sources */,
 				CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */,
+				CE778CAF27130D1D002023BC /* SelectViewController.swift in Sources */,
 				CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */,
 				CE778CA92712DD4A002023BC /* UIColorExtension.swift in Sources */,
 				CE778CAB2712DE24002023BC /* SaveProfile.swift in Sources */,
