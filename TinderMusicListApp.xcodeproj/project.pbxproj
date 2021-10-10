@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1AD22B198C16A378DDA774 /* Pods_TinderMusicListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */; };
 		CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8C2712D412002023BC /* AppDelegate.swift */; };
 		CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8E2712D412002023BC /* SceneDelegate.swift */; };
 		CE778C912712D412002023BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C902712D412002023BC /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.debug.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.release.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE778C892712D412002023BC /* TinderMusicListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderMusicListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE778C8C2712D412002023BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE778C8E2712D412002023BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CE778C952712D414002023BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE778C982712D414002023BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE778C9A2712D414002023BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderMusicListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1AD22B198C16A378DDA774 /* Pods_TinderMusicListApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008F8CDA4786DFE9B24E4DB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A7F5D94D010B8579FB4CA33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */,
+				2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE778C802712D412002023BC = {
 			isa = PBXGroup;
 			children = (
 				CE778C8B2712D412002023BC /* TinderMusicListApp */,
 				CE778C8A2712D412002023BC /* Products */,
+				4A7F5D94D010B8579FB4CA33 /* Pods */,
+				008F8CDA4786DFE9B24E4DB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE778C9D2712D414002023BC /* Build configuration list for PBXNativeTarget "TinderMusicListApp" */;
 			buildPhases = (
+				B2E8273497856195F5E74DE9 /* [CP] Check Pods Manifest.lock */,
 				CE778C852712D412002023BC /* Sources */,
 				CE778C862712D412002023BC /* Frameworks */,
 				CE778C872712D412002023BC /* Resources */,
+				11FAAA12AFDA26197B82A349 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11FAAA12AFDA26197B82A349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2E8273497856195F5E74DE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderMusicListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE778C852712D412002023BC /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		CE778C9E2712D414002023BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +365,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunich.TinderMusicListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE778C9F2712D414002023BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunich.TinderMusicListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
