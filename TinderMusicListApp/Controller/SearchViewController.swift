@@ -75,11 +75,62 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func moveToSelectCardView(_ sender: Any) {
         //パースを行う
+        startParse(keyword: searchTextField.text!)
     }
     
     func moveToCard(){
         performSegue(withIdentifier: "selectVC", sender: nil)
     }
     
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
+        if searchTextField.text != nil && segue.identifier == "selectVC" {
+            let selectVC = segue.destination as! SelectViewController
+            selectVC.artistNameArray = self.artistNameArray
+            selectVC.imageStringArray = self.imageStringArray
+            selectVC.previewURLArray = self.previewURLArray
+            selectVC.musicNameArray = self.musicNameArray
+            selectVC.userID = self.userID
+            selectVC.userName = self.userName
+        }
+    }
+
+    func startParse(keyword:String) {
+        HUD.show(.progress)
+        imageStringArray = [String]()
+        previewURLArray = [String]()
+        artistNameArray = [String]()
+        musicNameArray = [String]()
+        
+        let urlString = "https://itunes.apple.com/search?term=\(keyword)&country=jp"
+        let encodeUrlString:String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        AF.request(encodeUrlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
+            switch response.result {
+            case .success:
+                let json:JSON = JSON(response.data as Any)
+                var resultCount:Int = json["resultCount"].int!
+                for i in 0 ..< resultCount {
+                    var artWorkUrl = json["results"][i]["artworkUrl60"].string
+                    let previewUrl = json["results"][i]["previewUrl"].string
+                    let artistName = json["results"][i]["artistName"].string
+                    let trackCensoredName = json["results"][i]["trackCensoredName"].string
+                    if let range = artWorkUrl?.range(of: "60x60bb") {
+                        artWorkUrl?.replaceSubrange(range, with: "320x320bb")
+                    }
+                    self.imageStringArray.append(artWorkUrl!)
+                    self.previewURLArray.append(previewUrl!)
+                    self.artistNameArray.append(artistName!)
+                    self.musicNameArray.append(trackCensoredName!)
+                    if self.musicNameArray.count == resultCount {
+                        //カード画面へ移動
+                        self.moveToCard()
+                    }
+                }
+
+            HUD.hide()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     
 }
