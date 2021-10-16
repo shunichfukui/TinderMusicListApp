@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E1AD22B198C16A378DDA774 /* Pods_TinderMusicListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */; };
+		CE29BD00271AA1FB00BD71D4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */; };
 		CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8C2712D412002023BC /* AppDelegate.swift */; };
 		CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8E2712D412002023BC /* SceneDelegate.swift */; };
 		CE778C942712D412002023BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE778C922712D412002023BC /* Main.storyboard */; };
@@ -19,11 +20,15 @@
 		CE778CAB2712DE24002023BC /* SaveProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAA2712DE24002023BC /* SaveProfile.swift */; };
 		CE778CAD2712F737002023BC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAC2712F737002023BC /* SearchViewController.swift */; };
 		CE778CAF27130D1D002023BC /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CAE27130D1D002023BC /* SelectViewController.swift */; };
+		CE778CB22713254B002023BC /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CB02713254B002023BC /* CardViewCell.swift */; };
+		CE778CB32713254B002023BC /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE778CB12713254B002023BC /* CardViewCell.xib */; };
+		CE778CB527132E20002023BC /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778CB427132E20002023BC /* MusicDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.debug.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.release.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.release.xcconfig"; sourceTree = "<group>"; };
+		CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		CE778C892712D412002023BC /* TinderMusicListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderMusicListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE778C8C2712D412002023BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE778C8E2712D412002023BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,9 @@
 		CE778CAA2712DE24002023BC /* SaveProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveProfile.swift; sourceTree = "<group>"; };
 		CE778CAC2712F737002023BC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE778CAE27130D1D002023BC /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		CE778CB02713254B002023BC /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		CE778CB12713254B002023BC /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
+		CE778CB427132E20002023BC /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderMusicListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CE778CAA2712DE24002023BC /* SaveProfile.swift */,
+				CE778CB427132E20002023BC /* MusicDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +125,8 @@
 		CE778CA32712DA9A002023BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE778CB02713254B002023BC /* CardViewCell.swift */,
+				CE778CB12713254B002023BC /* CardViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 				CE778CA62712DAEA002023BC /* LoginViewController.swift */,
 				CE778CAC2712F737002023BC /* SearchViewController.swift */,
 				CE778CAE27130D1D002023BC /* SelectViewController.swift */,
+				CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +213,7 @@
 				CE778C992712D414002023BC /* LaunchScreen.storyboard in Resources */,
 				CE778C962712D414002023BC /* Assets.xcassets in Resources */,
 				CE778C942712D412002023BC /* Main.storyboard in Resources */,
+				CE778CB32713254B002023BC /* CardViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +268,9 @@
 			files = (
 				CE778CAD2712F737002023BC /* SearchViewController.swift in Sources */,
 				CE778CA72712DAEA002023BC /* LoginViewController.swift in Sources */,
+				CE778CB527132E20002023BC /* MusicDataModel.swift in Sources */,
+				CE778CB22713254B002023BC /* CardViewCell.swift in Sources */,
+				CE29BD00271AA1FB00BD71D4 /* FavoriteViewController.swift in Sources */,
 				CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */,
 				CE778CAF27130D1D002023BC /* SelectViewController.swift in Sources */,
 				CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */,
