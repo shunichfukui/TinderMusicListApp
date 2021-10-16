@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5E1AD22B198C16A378DDA774 /* Pods_TinderMusicListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1256C9C637234DDE8A930F6 /* Pods_TinderMusicListApp.framework */; };
 		CE29BD00271AA1FB00BD71D4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */; };
+		CE29BD02271AB50900BD71D4 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29BD01271AB50900BD71D4 /* ListTableViewController.swift */; };
+		CE29BD04271AD5E100BD71D4 /* GetUserIDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29BD03271AD5E100BD71D4 /* GetUserIDModel.swift */; };
+		CE29BD06271AE78700BD71D4 /* OtherPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29BD05271AE78700BD71D4 /* OtherPersonListViewController.swift */; };
 		CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8C2712D412002023BC /* AppDelegate.swift */; };
 		CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778C8E2712D412002023BC /* SceneDelegate.swift */; };
 		CE778C942712D412002023BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE778C922712D412002023BC /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		0E2DE80308E558DA8B8E9014 /* Pods-TinderMusicListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.debug.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D635970BA54D1456FCFD9A8 /* Pods-TinderMusicListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderMusicListApp.release.xcconfig"; path = "Target Support Files/Pods-TinderMusicListApp/Pods-TinderMusicListApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		CE29BD01271AB50900BD71D4 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		CE29BD03271AD5E100BD71D4 /* GetUserIDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserIDModel.swift; sourceTree = "<group>"; };
+		CE29BD05271AE78700BD71D4 /* OtherPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPersonListViewController.swift; sourceTree = "<group>"; };
 		CE778C892712D412002023BC /* TinderMusicListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderMusicListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE778C8C2712D412002023BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE778C8E2712D412002023BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 			children = (
 				CE778CAA2712DE24002023BC /* SaveProfile.swift */,
 				CE778CB427132E20002023BC /* MusicDataModel.swift */,
+				CE29BD03271AD5E100BD71D4 /* GetUserIDModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 				CE778CAC2712F737002023BC /* SearchViewController.swift */,
 				CE778CAE27130D1D002023BC /* SelectViewController.swift */,
 				CE29BCFF271AA1FB00BD71D4 /* FavoriteViewController.swift */,
+				CE29BD01271AB50900BD71D4 /* ListTableViewController.swift */,
+				CE29BD05271AE78700BD71D4 /* OtherPersonListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,7 +283,10 @@
 				CE778C8D2712D412002023BC /* AppDelegate.swift in Sources */,
 				CE778CAF27130D1D002023BC /* SelectViewController.swift in Sources */,
 				CE778C8F2712D412002023BC /* SceneDelegate.swift in Sources */,
+				CE29BD04271AD5E100BD71D4 /* GetUserIDModel.swift in Sources */,
+				CE29BD02271AB50900BD71D4 /* ListTableViewController.swift in Sources */,
 				CE778CA92712DD4A002023BC /* UIColorExtension.swift in Sources */,
+				CE29BD06271AE78700BD71D4 /* OtherPersonListViewController.swift in Sources */,
 				CE778CAB2712DE24002023BC /* SaveProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
