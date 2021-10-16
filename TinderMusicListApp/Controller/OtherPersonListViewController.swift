@@ -36,10 +36,9 @@ class OtherPersonListViewController: UIViewController, UITableViewDelegate, UITa
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.title = "\(userName)' S MusicList"
         //インディケーターを回す
         HUD.show(.progress)
         favRef.child("users").child(userID).observe(.value) {

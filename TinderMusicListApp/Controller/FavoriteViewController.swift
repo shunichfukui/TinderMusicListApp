@@ -130,7 +130,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         //ダウンロード
         downloadMusicURL(url: url!)
     }
-    
+
     @IBAction func back(_ sender: Any) {
         if player?.isPlaying == true {
             player!.stop()

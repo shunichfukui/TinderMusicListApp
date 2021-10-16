@@ -211,6 +211,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="favTableView" destination="hr1-Dx-Hqy" id="154-T7-4DD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mi-ZW-qFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +276,16 @@
                         <viewLayoutGuide key="safeArea" id="xCP-Rm-tAY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="W1W-Tu-7HU"/>
+                    <navigationItem key="navigationItem" id="W1W-Tu-7HU">
+                        <barButtonItem key="leftBarButtonItem" title="&gt;戻る" id="NEx-bq-6ge">
+                            <connections>
+                                <action selector="back:" destination="tJg-8J-xQw" id="aTR-0V-0Ag"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="favTableView" destination="Cuu-Uj-EvF" id="IHw-Un-aCf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyT-8F-jM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
