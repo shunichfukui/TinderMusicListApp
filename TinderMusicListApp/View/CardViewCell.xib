@@ -37,6 +37,11 @@
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artWorkImageView" destination="3uU-SQ-T2c" id="ekN-JD-OJe"/>
+                <outlet property="artistNameLabel" destination="evI-cd-OCx" id="7Tw-HN-hwK"/>
+                <outlet property="musicNameLabel" destination="pNt-cW-bj6" id="E1k-wY-LhS"/>
+            </connections>
             <point key="canvasLocation" x="86.956521739130437" y="64.620535714285708"/>
         </tableViewCell>
     </objects>

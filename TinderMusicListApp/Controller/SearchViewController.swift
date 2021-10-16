@@ -19,7 +19,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var favButton: UIButton!
     @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var searchButton: UIImageView!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var listButton: UIButton!
 
     var artistNameArray = [String]()
@@ -71,7 +71,6 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         searchTextField.resignFirstResponder()
     }
-    
 
     @IBAction func moveToSelectCardView(_ sender: Any) {
         //パースを行う
@@ -92,6 +91,16 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
             selectVC.userID = self.userID
             selectVC.userName = self.userName
         }
+    }
+
+    @IBAction func moveToFab(_ sender: Any) {
+        let favVC = self.storyboard?.instantiateViewController(identifier: "fav") as! FavoriteViewController
+        self.navigationController?.pushViewController(favVC, animated: true)
+    }
+
+    @IBAction func moveToList(_ sender: Any) {
+        let listVC = self.storyboard?.instantiateViewController(identifier: "list") as! ListTableViewController
+        self.navigationController?.pushViewController(listVC, animated: true)
     }
 
     func startParse(keyword:String) {

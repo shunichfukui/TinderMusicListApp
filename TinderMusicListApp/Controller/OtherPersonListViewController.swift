@@ -1,33 +1,13 @@
-//
-//  FavoriteViewController.swift
-//  TinderMusicListApp
-//
-//  Created by USER on 2021/10/16.
-//
-
 import UIKit
 import Firebase
 import SDWebImage
 import AVFoundation
 import PKHUD
 
-class PlayMusicButton:UIButton {
-    var params:Dictionary<String,Any>
-
-    override init(frame:CGRect) {
-        self.params = [:]
-        super.init(frame:frame)
-    }
-    required init?(coder aDecoder: NSCoder) {
-        self.params = [:]
-        super.init(coder:aDecoder)
-    }
-}
-
-class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, URLSessionDownloadDelegate {
-    
+class OtherPersonListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, URLSessionDownloadDelegate {
+        
     @IBOutlet weak var favTableView: UITableView!
-    
+
     var musicDataModelArray = [MusicDataModel]()
     var artworkUrl = ""
     var previewUrl = ""
@@ -49,25 +29,17 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         favTableView.allowsSelection = true
         favTableView.delegate = self
         favTableView.dataSource = self
-        
-        if UserDefaults.standard.object(forKey: "userID") != nil {
-            userID = UserDefaults.standard.object(forKey: "userID") as! String
-        }
-        if UserDefaults.standard.object(forKey: "userName") != nil {
-            userName = UserDefaults.standard.object(forKey: "userName") as! String
-            self.title = "\(userName)'s MusicList"
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.tintColor = .white
-        self.title = "\(userName)' S MusicList"
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = "\(userName)' S MusicList"
         //インディケーターを回す
         HUD.show(.progress)
         favRef.child("users").child(userID).observe(.value) {
@@ -99,6 +71,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.isHighlighted = false
         let musicDataModel = musicDataModelArray[indexPath.row]
         let imageView = cell.contentView.viewWithTag(1) as! UIImageView
         let labell1 =  cell.contentView.viewWithTag(2) as! UILabel
@@ -131,13 +104,6 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         downloadMusicURL(url: url!)
     }
     
-    @IBAction func back(_ sender: Any) {
-        if player?.isPlaying == true {
-            player!.stop()
-        }
-        self.navigationController?.popViewController(animated: true)
-    }
-
     func downloadMusicURL(url:URL) {
         var downloadTask:URLSessionDownloadTask
         downloadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (url, response, error) in
@@ -156,6 +122,13 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+    }
+
+    @IBAction func back(_ sender: Any) {
+        if player?.isPlaying == true {
+            player!.stop()
+        }
+        self.navigationController?.popViewController(animated: true)
     }
 
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
